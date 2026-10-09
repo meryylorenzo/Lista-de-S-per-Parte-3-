@@ -24,3 +24,17 @@ let noHabia = listaDeSuper.pop();
 let comprado = listaDeSuper.shift();
 
 console.log(listaDeSuper.length);
+
+function logItems(arreglo) {
+    arreglo.forEach((producto, indice) => {
+        console.log(`${indice}: ${producto}`);
+    });
+}
+
+console.log("Lista de Supermercado:")
+logItems(listadeSuper)
+
+let listalácteos = ("leche", "crema", "yogur");
+
+console.log("Lista de lácteos:");
+logItems(listalácteos)
